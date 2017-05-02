@@ -8,9 +8,9 @@ function populate() {
 		element.innerHTML = quiz.getQuestionIndex().text;
 		
 		//show choices
-		var choices = quiz.getquestionindex().choices;
+		var choices = quiz.getQuestionIndex().choices;
 		for(var i=0; i< choices.length; i++) {
-			var element = document.getelementbyid("choice" + i);
+			var element = document.getElementById("choice" + i);
 			element.innerHTML = choices[i];
 			guess("btn" + i, choices [i]);
 		}
@@ -21,9 +21,9 @@ function populate() {
 };
 
 function guess(id, guess) {
-	var button = document.getelementbyid(id);
+	var button = document.getElementById(id);
 	button.onclick = function() {
-		quiz.guess(guess):
+		quiz.guess(guess);
 		populate();
 	}
 };
