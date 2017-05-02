@@ -31,7 +31,7 @@ function guess(id, guess) {
 function ShowProgress(){
 	var currentquestionnumber = quiz.questionindex + 1;
 	var element = document.getElementById("progress");
-	element.innerHTML = "question " + currentquestionnumber + "of " + quiz.questions.length;
+	element.innerHTML = "Question " + currentquestionnumber + " of " + quiz.questions.length;
 }
 
 
@@ -46,7 +46,7 @@ function showscores(){
 var questions = [
 	new Question("Who wrote this application?", ["Nick", "Hilary", "Parker", "Respy"],"Nick"),
 	new Question("What is Nick's dog's name?", ["Buddy", "Respy", "Dog", "Girl"],"Respy"),
-	new Question("How are these questions populated?", ["statically", "dynamically", "Magically", "I Don't Know"],"Statically"),
+	new Question("How are these questions populated?", ["Statically", "Dynamically", "Magically", "I Don't Know"],"Statically"),
 	];
 	
 var quiz = new Quiz(questions);
