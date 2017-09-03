@@ -1,42 +1,22 @@
-body {
- background-image: 'backgroundImage.jpg'
- background-color: black
+video {
+	width: 30%;
+	margin: 1.66%;
+	text-align: right;
+}
+
+img {
+ float: left;
+ width: 30%;
+ margin: 1.66%;
 }
 
 h1 {
-  color: blue;
-  text-align: center;
-}
-
-video {
-  align-items: center;
-  float: left;
-}
-
-p {
-  font-size: 20px;
-  text-align: center;
-}
-
-.ideo {
-  background-color: white;
-  color: black;
-  font-weight: bold;
-  text-align: left;
-  font-size: 40px;
-}
-
-div {
-  align-content: center;
-}
-
-video {
-  width: 30%;
-  float: left;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    margin:auto;
+	font-family: Raleway;
+	margin-left: 1.66%;
+	font-size: 23px;
+	font-weight: 800;
+	text-transform: uppercase;
+	border-bottom: 2px solid grey;
+	width: 30%;
+	padding-bottom: 10px;
 }
