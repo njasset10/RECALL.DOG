@@ -1,7 +1,6 @@
 video {
 	width: 30%;
 	margin: 1.66%;
-	text-align: right;
 }
 
 img {
@@ -19,4 +18,8 @@ h1 {
 	border-bottom: 2px solid grey;
 	width: 30%;
 	padding-bottom: 10px;
+}
+
+a {
+	text-align: left;
 }

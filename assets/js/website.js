@@ -1,4 +1,4 @@
-alert("hello")
+/*alert("hello")
 
 var password = prompt('What is the password?')
 
@@ -9,3 +9,4 @@ if (password === "password") {
   password = prompt("sorry, try again")
   }
 }
+*/
