@@ -1,4 +1,32 @@
-/*alert("hello")
+
+
+
+var body = document.querySelector("body")
+var button = document.querySelector("button")
+
+button.addEventListener("click", colorChanger)
+
+
+function colorChanger() {
+  body.classList.toggle("purple")
+}
+
+
+
+/*
+
+var colorCounter = 1
+function colorChanger(){
+  colorCounter++
+  if (colorCounter % 2 ===0){
+  body.style.background = "blue"
+} else {
+  body.style.background ="white"
+}
+}
+
+
+alert("hello")
 
 var password = prompt('What is the password?')
 
@@ -9,10 +37,6 @@ if (password === "password") {
   password = prompt("sorry, try again")
   }
 }
-*/
-
-
-
 
 
 var p = document.querySelector("p")
@@ -33,11 +57,24 @@ function classOn(){
 
 var body = document.querySelector("Body")
 var h1 = document.querySelector("h1")
+var lis = document.querySelectorAll("li")
 
-p.addEventListener("mouseover",classOn)
+for (i = 0; i < lis.length; i++){
+  lis[i].addEventListener("mouseover",pinkTextChanger)
+}
+var pinkTrue = 0
+function pinkTextChanger(){ //manipulate
+  pinkTrue++
+    if (pinkTrue % 2 === 0){
+      this.style.color = "pink"} else {
+        this.style.color = "black"
+      }
 
-var isBlue = false
+  }
 
+  p.addEventListener("mouseover",classOn)
+
+  var isBlue = false
 
 function blueChanger(){ //manipulate
     if (isBlue) {
@@ -97,6 +134,7 @@ function buildString(movie){
 }
 
 
-// movies.forEach(function(movie, index, array){
-  // buildString(movie)
-// })
+movies.forEach(function(movie, index, array){
+ buildString(movie)
+})
+*/
