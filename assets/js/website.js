@@ -1,14 +1,29 @@
 
 
 
+var images = document.querySelectorAll("img")
+console.log(images);
+
 var body = document.querySelector("body")
-var button = document.querySelector("button")
-
-button.addEventListener("click", colorChanger)
-
+console.log(body);
+// var button = document.querySelector("button")
+// button.addEventListener("click", colorChanger)
 
 function colorChanger() {
   body.classList.toggle("purple")
+}
+
+for (var i = 0; i < images.length; i++) {
+  images[i].addEventListener("mouseover", dropShadow)
+  images[i].addEventListener("mouseout", inShadow)
+}
+
+
+function dropShadow() {
+  this.classList.add("shadow")
+}
+function inShadow() {
+  this.classList.remove("shadow")
 }
 
 

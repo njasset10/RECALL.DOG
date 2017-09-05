@@ -37,3 +37,12 @@ a {
 .winner {
 	color: blue;
 }
+
+.done {
+	text-decoration: line-through;
+	color: gray
+}
+
+.shadow {
+	box-shadow: 10px 5px 5px teal;
+}
